@@ -1,0 +1,17 @@
+# Project-specific files
+tasks.json
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+
+# Testing
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Build
+dist/
+build/
+*.egg-info/

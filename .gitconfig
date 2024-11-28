@@ -1,0 +1,17 @@
+[core]
+    autocrlf = input
+    eol = lf
+    whitespace = cr-at-eol
+    editor = code --wait
+
+[color]
+    ui = auto
+
+[pull]
+    rebase = false
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = simple
