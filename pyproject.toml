@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "task-cli"
+version = "0.1.0"
+description = "A simple task management CLI application"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["task", "cli", "management"]
+authors = [
+    { name = "@quantuumhedgehog", email = "lutso.mykhailo@gmail.com" }
+]
+dependencies = []
+license = { file = "LICENSE" }
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+task-cli = "task_cli.__main__:main"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
+pythonpath = [
+    "src"
+]
+
+[tool.coverage.run]
+source = ["src/task_cli"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
