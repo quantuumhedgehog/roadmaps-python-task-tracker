@@ -17,6 +17,7 @@ A robust command-line task management application built in Python that helps you
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Acknowledgments](#-acknowledgments)
+- [Version History](#-version-history)
 
 ## ✨ Features
 
@@ -38,16 +39,22 @@ A robust command-line task management application built in Python that helps you
 
 ## 🚀 Installation
 
+### From TestPyPI
+
+```bash
+pip install -i https://test.pypi.org/simple/ quantuumhedgehog-task-cli
+```
+
 ### From Source
 
 1. Clone the repository:
-```shell
-git clone <repository-url>
+```bash
+git clone https://github.com/quantuumhedgehog/roadmaps-python-task-tracker.git
 cd roadmaps-python-task-tracker
 ```
 
 2. Install in development mode:
-```shell
+```bash
 # Install with development dependencies
 pip install -e ".[dev]"
 
@@ -57,13 +64,13 @@ pip install -e .
 
 ### Via pip (when published)
 
-```shell
+```bash
 pip install task-tracker-cli
 ```
 
 ### Build from Source
 
-```shell
+```bash
 # Install build dependencies
 pip install build
 
@@ -79,13 +86,13 @@ pip install dist/task_cli-0.1.0-py3-none-any.whl
 The `task-cli` command provides several subcommands for task management:
 
 ### Task Creation
-```shell
+```bash
 # Add a new task
 task-cli add "Complete the project documentation"
 ```
 
 ### Task Listing
-```shell
+```bash
 # List all tasks
 task-cli list
 
@@ -96,7 +103,7 @@ task-cli list done
 ```
 
 ### Task Updates
-```shell
+```bash
 # Edit task description
 task-cli edit <task-id> "Updated task description"
 
@@ -118,7 +125,7 @@ The project includes two testing implementations to demonstrate different Python
 
 #### Using unittest
 The `unittest` implementation follows Python's built-in testing framework approach:
-```shell
+```bash
 # Run unittest tests
 python -m unittest tests/test_task_cli_unittests.py -v
 ```
@@ -131,7 +138,7 @@ Key features:
 
 #### Using pytest
 The `pytest` implementation offers a more modern and feature-rich testing approach:
-```shell
+```bash
 # Run basic tests
 pytest tests/test_task_cli_pytest.py -v
 
@@ -249,3 +256,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 This project is prepared within the [Python Developer](https://roadmap.sh/python) path on [Roadmap.sh](https://roadmap.sh/).
 
 Documentation and unit tests improvements were generated with assistance from [Codeium AI](https://codeium.com/).
+
+## 📝 Version History
+
+We maintain two logs to track project evolution:
+
+### Changelog
+
+The `CHANGELOG.md` file tracks all notable changes to the project:
+- Breaking changes
+- New features
+- Bug fixes
+- Documentation updates
+- Dependency updates
+
+View the [full changelog](CHANGELOG.md).
+
+### Future Planning
+
+The `FUTURELOG.md` file outlines future development plans:
+- Planned features and enhancements
+- Architectural improvements
+- Performance optimizations
+- Integration possibilities
+
+This helps us maintain a clear vision for future development.
