@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Task organization features
   - Advanced features and integrations
   - Performance improvements planning
+- Development dependencies for documentation generation (Sphinx)
+- Build and publishing tools (twine, build) to dev dependencies
 
 ## [0.1.1] - 2024-11-29
 ### Changed
