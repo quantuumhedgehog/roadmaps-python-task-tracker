@@ -171,7 +171,50 @@ The application uses a simple JSON file to store tasks, ensuring data persistenc
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Here's how you can help:
+We welcome contributions! Here's how you can help:
+
+### Commit Conventions
+
+We follow [Conventional Commits](https://www.conventionalcommits.org/) specification. Each commit message should be structured as follows:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+#### Types
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, semicolons, etc)
+- `refactor`: Code changes that neither fix bugs nor add features
+- `test`: Adding or modifying tests
+- `build`: Changes affecting build system or dependencies
+- `ci`: Changes to CI configuration files and scripts
+- `chore`: Other changes that don't modify src or test files
+
+#### Examples
+```bash
+feat: add task priority feature
+fix(parser): handle empty task descriptions
+docs: update installation instructions
+build(deps): add sphinx for documentation
+test: add unit tests for task deletion
+```
+
+#### Breaking Changes
+For breaking changes, add a `!` after the type/scope or add `BREAKING CHANGE` in the footer:
+```bash
+feat!: change task storage format
+feat(api)!: remove deprecated endpoints
+
+feat: allow provided config object
+
+BREAKING CHANGE: `config` key in API response has been renamed to `settings`
+```
 
 ### Getting Started
 1. Fork the repository
