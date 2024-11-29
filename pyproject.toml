@@ -50,6 +50,12 @@ dev = [
     "sphinx-rtd-theme>=2.0",  # Read the Docs theme for Sphinx
     "sphinx-autodoc-typehints>=1.25",  # Better type hints support
 ]
+docs = [
+    "sphinx>=7.0",
+    "sphinx-rtd-theme>=2.0",
+    "sphinx-autodoc-typehints>=1.25",
+    "sphinx-autoapi>=3.0",  # Alternative to sphinx-apidoc
+]
 
 [project.scripts]
 task-cli = "task_cli.__main__:main"
