@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.2.0] - 2024-01-09
 ### Added
 - Future features planning in FUTURELOG.md
   - Command enhancements roadmap
@@ -15,6 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Development dependencies for documentation generation (Sphinx)
 - Build and publishing tools (twine, build) to dev dependencies
 - Conventional Commits specification guide in README
+- Comprehensive Sphinx documentation:
+  - API documentation with sphinx-autoapi
+  - Installation and usage guides
+  - Development setup instructions
+  - Contributing guidelines
 
 ### Changed
 - Simplified project documentation structure:
@@ -22,6 +29,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - FUTURELOG.md for future planning
   - Removed redundant FEATURELOG.md
 - Updated documentation in README.md and Sphinx docs to reflect two-file structure
+- Improved source code documentation:
+  - Enhanced docstrings with detailed descriptions
+  - Added return type descriptions
+  - Updated command list in main module
+  - Improved code formatting
+
+### Development
+- Added separate docs dependencies group in pyproject.toml
+- Added Sphinx documentation build configuration
+- Improved development setup with clear documentation
 
 ## [0.1.1] - 2024-11-29
 ### Changed
