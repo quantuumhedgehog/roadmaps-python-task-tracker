@@ -11,6 +11,7 @@ A robust command-line task management application built in Python that helps you
 - [Usage](#-usage)
 - [Development](#-development)
 - [Data Storage](#-data-storage)
+- [Contributing](#-contributing)
 - [License](#-license)
 - [Acknowledgments](#-acknowledgments)
 
@@ -161,21 +162,37 @@ task-tracker-cli/                   # Root project directory
 └── pyproject.toml                  # Project metadata and dependencies
 ```
 
-## 💾 Data Storage
+## 🗄️ Data Storage
 
-Tasks are stored in a JSON file (`tasks.json` by default) with the following schema:
+The application uses a simple JSON file to store tasks, ensuring data persistence between sessions. The storage mechanism includes automatic file creation, data validation, and error handling.
 
-```json
-[
-    {
-        "id": 1,
-        "description": "Task description",
-        "status": "todo",
-        "createdAt": "2024-01-01T10:00:00",
-        "updatedAt": "2024-01-01T10:30:00"
-    }
-]
-```
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+### Getting Started
+1. Fork the repository
+2. Clone your fork: `git clone https://github.com/your-username/roadmaps-python-task-tracker.git`
+3. Create a feature branch: `git checkout -b feature-name`
+4. Make your changes
+5. Push to your fork: `git push origin feature-name`
+6. Open a Pull Request
+
+### What to Work On
+- Check our [Issues](https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/issues) page for open tasks
+- See [FUTURELOG.md](FUTURELOG.md) for planned features
+- Look for issues tagged with `good first issue` if you're new
+- Feel free to suggest new features!
+
+### Guidelines
+- Follow the existing code style
+- Add tests for new features
+- Update documentation as needed
+- Keep commits focused and write clear commit messages
+- Reference issues in your pull request
+
+### Development Setup
+Follow the [Development](#-development) section above to set up your environment.
 
 ## 📄 License
 
