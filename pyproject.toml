@@ -34,7 +34,7 @@ license = { file = "LICENSE" }
 
 [project.urls]
 Homepage = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/wiki"
-Documentation = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker#readme"
+Documentation = "https://roadmaps-python-task-tracker.readthedocs.io/"
 Repository = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker.git"
 "Bug Tracker" = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/issues"
 Changelog = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/blob/main/CHANGELOG.md"
