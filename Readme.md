@@ -2,7 +2,10 @@
 
 A robust command-line task management application built in Python that helps you organize and track your tasks efficiently.
 
-> This is an implementation of the [Task Tracker Project](https://roadmap.sh/projects/task-tracker) from roadmap.sh.
+> This is an implementation of the [Task Tracker Project](https://roadmap.sh/projects/task-tracker) from roadmap.sh.  
+> View my solution: [roadmap.sh/projects/task-tracker/solutions?u=66f3ac06c45e253cb03d158d](https://roadmap.sh/projects/task-tracker/solutions?u=66f3ac06c45e253cb03d158d)
+
+📦 **Package**: [TestPyPI](https://test.pypi.org/project/quantuumhedgehog-task-cli/) | [GitHub Wiki](https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/wiki)
 
 ## 📋 Table of Contents
 - [Features](#-features)

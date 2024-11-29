@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Advanced features and integrations
   - Performance improvements planning
 
+## [0.1.1] - 2024-11-29
+### Changed
+- Updated project homepage to GitHub Wiki
+- Added TestPyPI package link to README
+- Added roadmap.sh solution link to README and project metadata
+- Package renamed to `quantuumhedgehog-task-cli` for PyPI compatibility
+
 ## [0.1.0] - 2024-11-29
 ### Added
 - Initial release of Task CLI
@@ -48,5 +55,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Source distribution (tar.gz)
   - Python wheel package (whl)
 
-[Unreleased]: https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/compare/v0.1.0-66f3ac06...HEAD
+[Unreleased]: https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/compare/v0.1.0-66f3ac06...v0.1.1
 [0.1.0]: https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/releases/tag/v0.1.0-66f3ac06

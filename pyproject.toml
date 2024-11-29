@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "task-cli"
-version = "0.1.0"
+name = "quantuumhedgehog-task-cli"
+version = "0.1.1"
 description = "A simple task management CLI application"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -33,11 +33,12 @@ dependencies = []
 license = { file = "LICENSE" }
 
 [project.urls]
-Homepage = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker"
+Homepage = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/wiki"
 Documentation = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker#readme"
 Repository = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker.git"
 "Bug Tracker" = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/issues"
 Changelog = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/blob/main/CHANGELOG.md"
+"Roadmap.sh Solution" = "https://roadmap.sh/projects/task-tracker/solutions?u=66f3ac06c45e253cb03d158d"
 
 [project.optional-dependencies]
 dev = [
