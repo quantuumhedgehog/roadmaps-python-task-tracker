@@ -8,12 +8,36 @@ version = "0.1.0"
 description = "A simple task management CLI application"
 readme = "README.md"
 requires-python = ">=3.10"
-keywords = ["task", "cli", "management"]
+keywords = ["task", "cli", "management", "todo", "productivity"]
 authors = [
     { name = "@quantuumhedgehog", email = "lutso.mykhailo@gmail.com" }
 ]
+maintainers = [
+    { name = "@quantuumhedgehog", email = "lutso.mykhailo@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Scheduling",
+    "Topic :: Utilities"
+]
 dependencies = []
 license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker"
+Documentation = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker#readme"
+Repository = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker.git"
+"Bug Tracker" = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/issues"
+Changelog = "https://github.com/quantuumhedgehog/roadmaps-python-task-tracker/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = [
