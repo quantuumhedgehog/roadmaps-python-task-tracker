@@ -100,6 +100,10 @@ task-cli edit <task-id> "Updated task description"
 task-cli mark-todo <task-id>
 task-cli mark-progress <task-id>
 task-cli mark-done <task-id>
+
+# Remove a task
+task-cli rm <task-id>      # or
+task-cli remove <task-id>  # alternative command
 ```
 
 ## 🛠 Development
@@ -140,22 +144,21 @@ Key features:
 - Built-in parameterization
 - Rich plugin ecosystem
 - Coverage reporting
-- Parallel test execution (with pytest-xdist)
 
 ### Project Structure
 
 ```
-task-tracker-cli/           # Root project directory
-├── src/                    # Source code directory
-│   └── task_cli/          # Main package directory
-│       ├── __init__.py    # Package initialization
-│       ├── __main__.py    # Entry point for CLI
-│       └── task_cli.py    # Core implementation
-├── tests/                  # Test files directory
-│   ├── test_task_cli_pytest.py  # Pytest test suite
+task-tracker-cli/                   # Root project directory
+├── src/                            # Source code directory
+│   └── task_cli/                   # Main package directory
+│       ├── __init__.py             # Package initialization
+│       ├── __main__.py             # Entry point for CLI
+│       └── task_cli.py             # Core implementation
+├── tests/                          # Test files directory
+│   ├── test_task_cli_pytest.py     # Pytest test suite
 │   └── test_task_cli_unittests.py  # Unittest test suite
-├── README.md              # Project documentation
-└── pyproject.toml         # Project metadata and dependencies
+├── README.md                       # Project documentation
+└── pyproject.toml                  # Project metadata and dependencies
 ```
 
 ## 💾 Data Storage
