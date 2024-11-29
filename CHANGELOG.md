@@ -16,6 +16,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Build and publishing tools (twine, build) to dev dependencies
 - Conventional Commits specification guide in README
 
+### Changed
+- Simplified project documentation structure:
+  - CHANGELOG.md for tracking all changes
+  - FUTURELOG.md for future planning
+  - Removed redundant FEATURELOG.md
+- Updated documentation in README.md and Sphinx docs to reflect two-file structure
+
 ## [0.1.1] - 2024-11-29
 ### Changed
 - Updated project homepage to GitHub Wiki
