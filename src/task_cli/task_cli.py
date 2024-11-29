@@ -35,15 +35,20 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 TaskerCommand = (
-        Literal["add", "list", "edit", "rm", "remove", "mark-todo", "mark-progress", "mark-done"] | AnyStr | None
+        Literal[
+            "add", "list", "edit", "rm", "remove", "mark-todo", "mark-progress", "mark-done"
+        ] | AnyStr | None
 )
 
 
 def ticket_print(tasklist: list):
-    """
+    """Print task details in a formatted way.
+
+    Displays each task's ID, description, status, creation time,
+    and last update time in a readable format.
 
     Args:
-        tasklist (list): List of tasks.
+        tasklist (list[Task]): List of Task objects to display.
     """
     for task in tasklist:
         print(
@@ -55,26 +60,34 @@ def ticket_print(tasklist: list):
 
 
 def usage_print():
-    """ Prints usage information """
-    print(f"Usage:\ttask-cli <command> [arguments]\nCommands:\t"
-          f"{TaskerCommand.__args__[0].__args__}\nExample:\ttask-cli list todo")
+    """Print command-line usage information.
+
+    Displays available commands, their arguments, and proper syntax.
+    The output includes all valid TaskerCommand values.
+    """
+    print(
+            f"Usage:\ttask-cli <command> [arguments]\n"
+            f"Commands:\t{TaskerCommand.__args__[0].__args__}\n"
+            f"Example:\ttask-cli list todo"
+    )
 
 
 def parse_arguments(line_input: list, tasker: Tasker = Tasker()):
     """Parse and execute CLI commands.
 
-    Handles various command patterns:
-    - list [status]
-    - add <description>
-    - edit <task_id> <description>
-    - mark-todo/mark-progress/mark-done <task_id>
+    Processes command line arguments and executes corresponding task operations.
+    All operations are performed through the provided Tasker instance.
 
     Args:
-        line_input (list): Command line arguments
-        tasker (object): Tasker instance
+        line_input (list): Command line arguments excluding program name.
+            First argument should be a command, followed by its parameters.
+        tasker (Tasker, optional): Tasker instance for task management.
+            Defaults to a new Tasker instance.
 
     Returns:
-        List[Task]: List of tasks after command execution
+        List[Task]: List of tasks after command execution.
+            For 'list' commands, returns filtered tasks.
+            For other commands, returns all tasks.
     """
     status_filter = None
     match line_input:
