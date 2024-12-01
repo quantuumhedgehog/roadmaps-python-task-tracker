@@ -36,8 +36,8 @@ logger = logging.getLogger(__name__)
 
 TaskerCommand = (
         Literal[
-            "add", "list", "edit", "rm", "remove", "mark-todo", "mark-progress", "mark-done"
-        ] | AnyStr | None
+            "add", "list", "edit", "rm", "remove", "mark-todo", "mark-progress", "mark-done", "help"
+        ] | None
 )
 
 
